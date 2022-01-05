@@ -17,6 +17,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-pro": "^5.15.3",
     "@rushstack/eslint-patch": "^1.1.0",
+    "@tailwindcss/typography": "^0.5.0",
     "@types/node": "^16.11.17",
     "@vitejs/plugin-vue": "^2.0.1",
     "@vue/eslint-config-prettier": "^7.0.0",

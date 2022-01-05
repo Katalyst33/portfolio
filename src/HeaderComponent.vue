@@ -1,20 +1,39 @@
 <template>
-  <header>
-    <div class="flex justify-between">
+  <div class="shadow-lg border-b border-b-slate-50 dark:border-b-green-500">
+    <div class="flex justify-between items-center">
       <AppLogo />
-      <div>
+      <div class="flex items-center space-x-4">
+        <button @click="setTheme">click</button>
         <ul v-for="(item, index) in menuItems" :key="index">
-          <li>
-            <router-link :to="item.link">{{ item.title }}</router-link>
+          <li class="flex items-center space-x-1">
             <i :class="item.icon"></i>
+            <router-link
+              class="px-2 hidden md:block dark:text-slate-50"
+              :to="item.link"
+              >{{ item.title }}</router-link
+            >
           </li>
         </ul>
       </div>
     </div>
-  </header>
+  </div>
 </template>
 <script setup lang="ts">
 import AppLogo from "@/components/icons/AppLogo.vue";
+
+function setTheme() {
+  const body = document.getElementById("theme") as HTMLBodyElement;
+  console.log(body);
+  const light = localStorage.theme === "light";
+  if (light) {
+    localStorage.theme = "dark";
+    body.classList.add("dark");
+  } else {
+    localStorage.theme = "light";
+
+    body.classList.remove("dark");
+  }
+}
 
 const menuItems = [
   {

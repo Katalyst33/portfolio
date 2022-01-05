@@ -1,19 +1,32 @@
 <script setup lang="ts">
 import { dummy_text1k, dummy_text_short } from "../export";
 import HeaderComponent from "@/HeaderComponent.vue";
+
 // import MouseComponent from "@/MouseComponent.vue";
+
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}
 </script>
 <template>
   <!--  <MouseComponent />-->
-  <HeaderComponent />
-  <div class="h-screen bg-yellow-200 overflow-y-hidden">
-    <div class="container mx-auto">
+  <div class="h-screen overflow-y-hidden">
+    <HeaderComponent class="shadow-orange-500" />
+
+    <div class="">
       <div class>
-        <div class="grid grid-cols-2">
-          <div class="bg-green-500">
+        <div class="grid lg:grid-cols-4">
+          <div class="bg-slate-50 dark:bg-slate-900">
             {{ dummy_text1k }}
           </div>
-          <div class="bg-red-500 h-[1000px] overflow-y-scroll">
+          <div class="bg-red-500 h-[1000px] col-span-3 overflow-y-scroll">
             <router-view />
           </div>
         </div>
