@@ -29,7 +29,11 @@ if (
           <div
             class="bg-[#f8f8f8] dark:bg-gray-800 h-screen col-span-3 overflow-y-scroll"
           >
-            <router-view />
+            <router-view v-slot="{ Component }">
+              <transition name="route" mode="out-in">
+                <component :is="Component" />
+              </transition>
+            </router-view>
           </div>
         </div>
       </div>
@@ -48,50 +52,20 @@ if (
   /*cursor: url("@/icons/sharing.png"), auto;*/
   /*cursor: none;*/
 }
-.cursor-custom {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid #d9147c;
-  position: absolute;
-  transition-timing-function: ease-out;
-  animation: cursor-blink 1s infinite alternate;
+
+.route-enter-from {
+  opacity: 0;
+  transform: translateY(100px);
 }
-.cursor-custom::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 3px solid #143ea8;
-  opacity: 0.5;
-  transition: opacity 0.2s;
+.route-enter-active {
+  transition: all 0.3s ease-out;
+}
+.route-leave-to {
+  opacity: 0;
+  transform: translateY(-100px);
 }
 
-@keyframes cursor-blink {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.7);
-  }
-}
-
-@keyframes cursor-expand {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(3);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
-.expand {
-  animation: cursor-expand 0.5s forwards;
+.route-leave-active {
+  transition: all 0.3s ease-in;
 }
 </style>

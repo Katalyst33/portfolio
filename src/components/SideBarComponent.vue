@@ -3,13 +3,15 @@
     <AppLogo class="flex" />
     <img class="rounded-full h-[200px] clip-circle" src="@/assets/img/me.png" />
 
-    <div class="text-left regular-text">
+    <div class="flex flex-col space-y-3 text-left regular-text">
       <ul v-for="(item, index) in menuItems" :key="index">
-        <li class="flex items-center space-x-1">
+        <li class="flex items-center">
           <i :class="item.icon"></i>
-          <router-link class="px-2 hidden md:block menu-text" :to="item.link">{{
-            item.title
-          }}</router-link>
+          <router-link
+            class="pl-4 text-left capitalize hidden md:block menu-text"
+            :to="item.link"
+            >{{ item.title }}</router-link
+          >
         </li>
       </ul>
     </div>
