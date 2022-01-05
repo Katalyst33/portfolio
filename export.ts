@@ -147,3 +147,31 @@ export const samples = [
     title: "",
   },
 ];
+
+export const menuItems = [
+  {
+    title: "Home",
+    link: "/",
+    icon: "fad fa-home-lg-alt",
+  },
+  {
+    title: "About",
+    link: "/about",
+    icon: "fad fa-info-circle",
+  },
+  {
+    title: "Contact",
+    link: "/contact",
+    icon: "fad fa-address-card",
+  },
+  {
+    title: "Login",
+    link: "/login",
+    icon: "fad fa-sign-in-alt",
+  },
+  {
+    title: "Register",
+    link: "/register",
+    icon: "fad fa-user-plus",
+  },
+];

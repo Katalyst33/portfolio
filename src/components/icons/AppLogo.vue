@@ -4,7 +4,7 @@
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500 289"
       xml:space="preserve"
-      class="fill-current text-green-500 h-10"
+      class="fill-current text-default h-10"
     >
       <path
         d="M323.7 223.3h-5.8l-.1.1-46-.3-35-.2h-.3l86.6-124.1 21.8-31.3 24.2-34.7h-22.5l-304.8-.4L79.7 71l210.8.4L185.2 224l-25.5 37-.4.5h176.1l.2-.1h115.6l34.7-38.1h-29.8z"

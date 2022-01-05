@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { dummy_text1k, dummy_text_short } from "../export";
 import HeaderComponent from "@/HeaderComponent.vue";
+import SideBarComponent from "@/SideBarComponent.vue";
 
 // import MouseComponent from "@/MouseComponent.vue";
 
@@ -23,10 +23,10 @@ if (
     <div class="">
       <div class>
         <div class="grid lg:grid-cols-4">
-          <div class="bg-slate-50 dark:bg-slate-900">
-            {{ dummy_text1k }}
+          <div class="hidden lg:block">
+            <SideBarComponent />
           </div>
-          <div class="bg-red-500 h-[1000px] col-span-3 overflow-y-scroll">
+          <div class="bg-red-500 h-screen col-span-3 overflow-y-scroll">
             <router-view />
           </div>
         </div>
@@ -35,7 +35,8 @@ if (
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@import "../src/assets/scss/app.scss";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

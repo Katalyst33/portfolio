@@ -1,0 +1,11 @@
+@use "base";
+.title{
+  @include base.text-default;
+}
+
+.menu-text{
+  @include base.text-default;
+  //@apply text-base
+
+}
+

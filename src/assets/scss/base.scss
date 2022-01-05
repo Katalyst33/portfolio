@@ -1,0 +1,11 @@
+@mixin text-default{
+
+  @apply dark:text-slate-50 text-slate-500
+
+}
+
+@mixin fill-default{
+
+  @apply dark:bg-slate-50 bg-slate-500
+
+}
