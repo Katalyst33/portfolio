@@ -1,6 +1,7 @@
 @use "base";
 .title{
   @include base.text-default;
+  @apply text-3xl
 }
 
 .menu-text{
@@ -9,3 +10,7 @@
 
 }
 
+.regular-text{
+  @include base.text-default;
+  //@apply text-base
+}

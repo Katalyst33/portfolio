@@ -155,23 +155,33 @@ export const menuItems = [
     icon: "fad fa-home-lg-alt",
   },
   {
-    title: "About",
+    title: "About Me",
     link: "/about",
     icon: "fad fa-info-circle",
   },
   {
-    title: "Contact",
-    link: "/contact",
+    title: "resume",
+    link: "/resume",
     icon: "fad fa-address-card",
   },
   {
-    title: "Login",
-    link: "/login",
+    title: "portfolio",
+    link: "/portfolio",
+    icon: "fad fa-address-card",
+  },
+  {
+    title: "Skills",
+    link: "/skills",
     icon: "fad fa-sign-in-alt",
   },
   {
-    title: "Register",
-    link: "/register",
+    title: "Tools",
+    link: "/tools",
+    icon: "fad fa-user-plus",
+  },
+  {
+    title: "Contact",
+    link: "/contact",
     icon: "fad fa-user-plus",
   },
 ];

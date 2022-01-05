@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-lg border-b border-b-slate-50 dark:border-b-green-500 p-2">
+  <div class="border-b border-b-slate-50 dark:border-b-green-500 p-2">
     <div class="flex justify-between items-center">
       <AppLogo />
       <div class="flex items-center space-x-4">

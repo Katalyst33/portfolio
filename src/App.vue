@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HeaderComponent from "@/HeaderComponent.vue";
-import SideBarComponent from "@/SideBarComponent.vue";
+import SideBarComponent from "@/components/SideBarComponent.vue";
 
 // import MouseComponent from "@/MouseComponent.vue";
 
@@ -18,7 +18,7 @@ if (
 <template>
   <!--  <MouseComponent />-->
   <div class="h-screen overflow-y-hidden">
-    <HeaderComponent class="shadow-orange-500" />
+    <HeaderComponent />
 
     <div class="">
       <div class>
@@ -26,7 +26,9 @@ if (
           <div class="hidden lg:block">
             <SideBarComponent />
           </div>
-          <div class="bg-red-500 h-screen col-span-3 overflow-y-scroll">
+          <div
+            class="bg-[#f8f8f8] dark:bg-gray-800 h-screen col-span-3 overflow-y-scroll"
+          >
             <router-view />
           </div>
         </div>
