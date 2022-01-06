@@ -17,7 +17,7 @@ if (
 </script>
 <template>
   <!--  <MouseComponent />-->
-  <div class="h-screen overflow-y-hidden">
+  <div class="h-screen overflow-y-hidden w-screen">
     <HeaderComponent />
 
     <div class="">
@@ -29,7 +29,7 @@ if (
           <div
             class="bg-[#f8f8f8] dark:bg-gray-800 h-screen col-span-3 overflow-y-scroll"
           >
-            <router-view v-slot="{ Component, route }">
+            <router-view v-slot="{ Component, route }" class="md:p-20">
               <transition name="route" mode="out-in">
                 <component :is="Component" :key="route.path" />
               </transition>

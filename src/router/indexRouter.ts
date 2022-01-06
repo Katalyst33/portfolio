@@ -50,14 +50,11 @@ const router = createRouter({
     },
   ],
 
-  scrollBehavior(to, from, savedPosition) {
-    // always scroll 10px above the element #main
-    return {
-      // could also be
-      // el: document.getElementById('main'),
-      el: "#main",
-      top: -10,
-    };
+  scrollBehavior() {
+    const app = document.getElementById("app") as HTMLDivElement | null;
+    if (app) {
+      app.scrollIntoView({ behavior: "smooth" });
+    }
   },
 });
 

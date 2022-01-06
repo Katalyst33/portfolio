@@ -1,20 +1,19 @@
-<script setup lang="ts">
-import { dummy_text1k, dummy_text_short } from "../../export";
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    <main>
-      <h1 class="text-3xl text-default">Home Page</h1>
-      <p v-html="dummy_text1k"></p>
-      <p class="bg-amber-700">
-        {{ dummy_text_short }}
-      </p>
-      <p class="bg-amber-700">
-        {{ dummy_text_short }}
-      </p>
-      <p class="bg-amber-700">
-        {{ dummy_text_short }}
+  <div class="text-default">
+    <main class="regular-text">
+      <h1 class="text-5xl font-medium text-left">
+        Hello, I’m Chibu<span class="font-bold underline decoration-emerald-400"
+          >eze</span
+        >
+        Nmeje.
+      </h1>
+      <p class="text-justify py-4 w-[600px]">
+        I a I’m a Staff Software Engineer working on Front-End Experiences at
+        Algolia. I can't shut up about test-driven development and utility-first
+        CSS. I also host the Developer Experience podcast, and share what I
+        learn on my blog frontstuff.io, or at meetups and conferences.
       </p>
     </main>
   </div>
