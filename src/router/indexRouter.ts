@@ -5,7 +5,7 @@ const Portfolio = () => import("../views/DemoView.vue");
 const Skills = () => import("../views/DemoView.vue");
 const Resume = () => import("../views/DemoView.vue");
 const Tools = () => import("../views/DemoView.vue");
-const Contact = () => import("../views/DemoView.vue");
+const Contact = () => import("../views/ContactPage.vue");
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
