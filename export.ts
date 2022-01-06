@@ -140,11 +140,15 @@ export const samples = [
   },
   {
     link: "https://preview.themeforest.net/item/tokyo-personal-portfolio-template/full_screen_preview/31647361?_ga=2.4751091.1975881618.1641323808-48450719.1569241194",
-    title: "simple",
+    title: "Tokyo",
   },
   {
-    link: "",
-    title: "",
+    link: "https://preview.themeforest.net/item/iknow-cv-resume-template/full_screen_preview/34225451?_ga=2.4751091.1975881618.1641323808-48450719.1569241194",
+    title: "iknow",
+  },
+  {
+    link: "https://tunis.ibthemespro.com/home-light",
+    title: "sidbar design",
   },
 ];
 

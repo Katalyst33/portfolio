@@ -1,16 +1,15 @@
 <template>
-  <div class="border-b border-b-slate-50 dark:border-b-green-500 p-2">
+  <div class="p-2">
     <div class="flex justify-between items-center">
-      <AppLogo />
+      <AppLogo class="xl:hidden block" />
+      <div></div>
       <div class="flex items-center space-x-4">
         <button @click="setTheme">click</button>
         <ul v-for="(item, index) in menuItems" :key="index">
           <li class="flex items-center space-x-1">
-            <i :class="item.icon"></i>
-            <router-link
-              class="px-2 hidden md:block menu-text"
-              :to="item.link"
-              >{{ item.title }}</router-link
+            <router-link class="px-2 menu-text" :to="item.link">
+              <i :class="item.icon"></i>
+              <span class="capitalize pl-2">{{ item.title }}</span></router-link
             >
           </li>
         </ul>

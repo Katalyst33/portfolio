@@ -1,24 +1,25 @@
 <template>
-  <div class="pl-10">
-    <AppLogo class="flex" />
-    <img class="rounded-full h-[200px] clip-circle" src="@/assets/img/me.png" />
+  <div class="flex h-screen justify-center items-center regular-text">
+    <div>
+      <AppLogo />
 
-    <div class="flex flex-col space-y-3 text-left regular-text">
-      <ul v-for="(item, index) in menuItems" :key="index">
-        <li class="flex items-center">
-          <router-link
-            class="pl-4 text-left capitalize hidden md:block menu-text"
-            :to="{ name: item.name }"
-          >
-            <i :class="item.icon"></i> {{ item.title }}</router-link
-          >
-        </li>
-      </ul>
+      <div class="flex flex-col space-y-3 pt-10 -ml-4">
+        <ul v-for="(item, index) in menuItems" :key="index">
+          <li class="flex items-center">
+            <router-link
+              class="pl-4 text-left capitalize hidden md:block menu-text"
+              :to="{ name: item.name }"
+            >
+              <i :class="item.icon"></i> {{ item.title }}</router-link
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 <script setup>
-import { dummy_text_short, menuItems } from "../../export";
+import { menuItems } from "../../export";
 
 import AppLogo from "@/components/icons/AppLogo.vue";
 </script>

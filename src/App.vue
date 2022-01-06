@@ -22,14 +22,14 @@ if (
 
     <div class="">
       <div class>
-        <div class="grid lg:grid-cols-4">
-          <div class="hidden lg:block">
+        <div class="grid xl:grid-cols-4">
+          <div class="hidden xl:block">
             <SideBarComponent />
           </div>
           <div
             class="bg-[#f8f8f8] dark:bg-gray-800 h-screen col-span-3 overflow-y-scroll"
           >
-            <router-view v-slot="{ Component, route }" class="md:p-20">
+            <router-view v-slot="{ Component, route }" class="md:p-20 px-4">
               <transition name="route" mode="out-in">
                 <component :is="Component" :key="route.path" />
               </transition>
