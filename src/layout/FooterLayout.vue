@@ -1,0 +1,12 @@
+<template>
+  <div class="flex space-x-10 py-10">
+    <div v-for="(item, index) in samples" :key="index">
+      <a :href="item.link" target="_blank">{{ item.title }}</a>
+    </div>
+    <a href=""></a>
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { samples } from "../../export";
+</script>

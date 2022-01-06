@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import HeaderComponent from "@/HeaderComponent.vue";
 import SideBarComponent from "@/components/SideBarComponent.vue";
+import FooterLayout from "@/layout/FooterLayout.vue";
 
 // import MouseComponent from "@/MouseComponent.vue";
 
@@ -34,6 +35,7 @@ if (
                 <component :is="Component" :key="route.path" />
               </transition>
             </router-view>
+            <FooterLayout />
           </div>
         </div>
       </div>
