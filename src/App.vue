@@ -29,9 +29,9 @@ if (
           <div
             class="bg-[#f8f8f8] dark:bg-gray-800 h-screen col-span-3 overflow-y-scroll"
           >
-            <router-view v-slot="{ Component }">
+            <router-view v-slot="{ Component, route }">
               <transition name="route" mode="out-in">
-                <component :is="Component" />
+                <component :is="Component" :key="route.path" />
               </transition>
             </router-view>
           </div>

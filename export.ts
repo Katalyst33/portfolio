@@ -152,36 +152,49 @@ export const menuItems = [
   {
     title: "Home",
     link: "/",
+    name: "Home",
     icon: "fad fa-home-lg-alt",
   },
   {
     title: "About Me",
     link: "/about",
+    name: "About",
+
     icon: "fad fa-info-circle",
   },
   {
     title: "resume",
+    name: "Resume",
+
     link: "/resume",
     icon: "fad fa-address-card",
   },
   {
     title: "portfolio",
     link: "/portfolio",
+    name: "Portfolio",
+
     icon: "fad fa-address-card",
   },
   {
     title: "Skills",
+    name: "Skill",
+
     link: "/skills",
     icon: "fad fa-sign-in-alt",
   },
   {
     title: "Tools",
     link: "/tools",
+    name: "Tools",
+
     icon: "fad fa-user-plus",
   },
   {
     title: "Contact",
     link: "/contact",
+    name: "Contact",
+
     icon: "fad fa-user-plus",
   },
 ];

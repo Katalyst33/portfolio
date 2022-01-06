@@ -6,11 +6,11 @@
     <div class="flex flex-col space-y-3 text-left regular-text">
       <ul v-for="(item, index) in menuItems" :key="index">
         <li class="flex items-center">
-          <i :class="item.icon"></i>
           <router-link
             class="pl-4 text-left capitalize hidden md:block menu-text"
-            :to="item.link"
-            >{{ item.title }}</router-link
+            :to="{ name: item.name }"
+          >
+            <i :class="item.icon"></i> {{ item.title }}</router-link
           >
         </li>
       </ul>
