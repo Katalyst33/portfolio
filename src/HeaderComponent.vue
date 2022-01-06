@@ -4,12 +4,16 @@
       <AppLogo class="xl:hidden block" />
       <div></div>
       <div class="flex items-center space-x-4">
-        <button @click="setTheme">click</button>
+        <button class="cursor-pointer text-green-400" @click="setTheme">
+          click
+        </button>
         <ul v-for="(item, index) in menuItems" :key="index">
           <li class="flex items-center space-x-1">
             <router-link class="px-2 menu-text" :to="item.link">
               <i :class="item.icon"></i>
-              <span class="capitalize pl-2">{{ item.title }}</span></router-link
+              <span class="capitalize pl-2 hidden xl:inline">{{
+                item.title
+              }}</span></router-link
             >
           </li>
         </ul>

@@ -12,11 +12,10 @@
             Nmeje.
           </h1>
           <p class="text-justify py-4 lg:w-[600px]">
-            I a I’m a Staff Software Engineer working on Front-End Experiences
-            at Algolia. I can't shut up about test-driven development and
-            utility-first CSS. I also host the Developer Experience podcast, and
-            share what I learn on my blog frontstuff.io, or at meetups and
-            conferences.
+            A Front end developer based in Glasgow Scotland. Currently working
+            at Katalyst Technologies as Technical Lead. I specialise in using
+            Vue, React, and other current web development technologies and
+            practises to create engaging experiences and functional interfaces.
           </p>
         </div>
       </main>
