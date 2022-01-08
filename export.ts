@@ -150,6 +150,13 @@ export const samples = [
     link: "https://tunis.ibthemespro.com/home-light",
     title: "sidbar design",
   },
+  { link: "https://manparvesh.com/", title: "manparvesh-details" },
+  {
+    link: "https://www.codementor.io/learn-programming/12-important-things-to-include-in-web-dev-portfolios",
+    title: "Things to add",
+  },
+  { link: "", title: "" },
+  // { link: "", title: "" },
 ];
 
 export const menuItems = [
@@ -174,9 +181,9 @@ export const menuItems = [
     icon: "fad fa-address-card",
   },
   {
-    title: "portfolio",
-    link: "/portfolio",
-    name: "Portfolio",
+    title: "Experience",
+    link: "/experience",
+    name: "Experience",
 
     icon: "fad fa-address-card",
   },

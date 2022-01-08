@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 const About = () => import("../views/DemoView.vue");
-const Portfolio = () => import("../views/DemoView.vue");
+const Experience = () => import("../views/ExperiencePage.vue");
 const Skills = () => import("../views/DemoView.vue");
 const Resume = () => import("../views/DemoView.vue");
 const Tools = () => import("../views/DemoView.vue");
@@ -24,14 +24,15 @@ const router = createRouter({
       component: About,
     },
     {
+      path: "/experience",
+      name: "Experience",
+      component: Experience,
+    },
+
+    {
       path: "/resume",
       name: "Resume",
       component: Resume,
-    },
-    {
-      path: "/portfolio",
-      name: "Portfolio",
-      component: Portfolio,
     },
     {
       path: "/skills",

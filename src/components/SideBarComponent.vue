@@ -2,7 +2,6 @@
   <div class="flex h-screen justify-center items-center regular-text">
     <div>
       <AppLogo />
-
       <div class="flex flex-col space-y-3 pt-10 -ml-4">
         <ul v-for="(item, index) in menuItems" :key="index">
           <li class="flex items-center">
