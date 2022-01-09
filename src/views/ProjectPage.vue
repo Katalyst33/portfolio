@@ -1,11 +1,9 @@
 <template>
   <div>
     <h1 class="title">Project page</h1>
-    <div class="tab" v-for="(item, index) in projects" :key="index">
-      <h1 class="font-bold regular-text text-2xl">{{ item.name }}</h1>
-
-      <div class="grid grid-cols-2">
-        <div class="row-start-1">
+    <div class="tab py-10" v-for="(item, index) in projects" :key="index">
+      <div class="grid grid-cols-2 gap-x-10 gap-y-10">
+        <div :class="isOddNumber(index) ? 'order-1' : ''">
           <a
             style="width: 500px; height: 300px"
             target="_blank"
@@ -19,30 +17,46 @@
                 src="https://picsum.photos/1000/"
               />
               <div
-                class="bg-green-400 rounded-md opacity-75 hover:opacity-0 absolute top-0 bottom-0 left-0 transition duration-500 ease-in-out"
+                class="bg-[#1d4550] rounded-md opacity-75 hover:opacity-0 absolute top-0 bottom-0 left-0 transition duration-500 ease-in-out"
                 style="width: 500px; height: 300px"
               ></div>
             </div>
           </a>
         </div>
         <div class="regular-text space-y-4">
-          <div class="dark:bg-slate-800 p-4">
-            <div>
-              <p>{{ item.description }}</p>
-            </div>
+          <h1
+            class="font-bold regular-text text-2xl"
+            :class="isOddNumber(index) ? '' : 'text-right'"
+          >
+            {{ item.name }} {{ isOddNumber(index) ? "💎odd" : "even" }}
+            {{ index }}
+          </h1>
 
-            <div>
-              <h3 class="mt-4">Roles</h3>
-              <ul
-                class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-2 text-slate-200 font-medium pb-4"
-              >
-                <li v-for="(item, index) in item.roles" :key="index" class="">
-                  {{ item }},
-                </li>
-              </ul>
-              <a target="_blank" :href="item.link">
-                <i class="fad fa-external-link-alt font-bold py-4"></i
-              ></a>
+          <div :class="isOddNumber(index) ? 'text-left' : 'text-right'">
+            <div class="dark:bg-slate-800 p-4">
+              <div>
+                <p class="">{{ item.description }}</p>
+              </div>
+            </div>
+            <div class="flex" :class="isOddNumber(index) ? '' : 'justify-end'">
+              <div>
+                <h3 class="mt-4">Roles</h3>
+                <ul
+                  class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-2 text-slate-200 font-medium pb-4 text-right"
+                >
+                  <li v-for="(item, index) in item.roles" :key="index" class="">
+                    {{ item }},
+                  </li>
+                </ul>
+                <a
+                  class="flex"
+                  :class="isOddNumber(index) ? '' : 'justify-end'"
+                  target="_blank"
+                  :href="item.link"
+                >
+                  <i class="fad fa-external-link-alt font-bold py-4"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
@@ -52,7 +66,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
 const projects = ref([
   {
@@ -70,7 +84,7 @@ const projects = ref([
 
     description: `Grand Eagle Travels is a travel agency web application for users to book and process there travel destinations with the agency
  it features a  administrator dashboard for managing travel destinations, processing personal
- information and user.  it also features  a user dashboard for users to provide information and manage destination `,
+ information and user.  it also features  a user dashboard for users to provide information and manage destination.`,
 
     roles: [
       "Design Lead",
@@ -92,8 +106,12 @@ const projects = ref([
     name: "Katalyst Technologies",
     link: "https://katalyst.tech/",
     img: "https://picsum.photos/500/?random",
-    description: `Katalyst Technologies is a company website built with wordpress, it features a admin dashboard for managing content and updating content about the company oin the website`,
+    description: `Katalyst Technologies is a company website built with wordpress, it features a admin dashboard for managing content and updating content about the company oin the website.`,
     roles: ["Web developer"],
   },
 ]);
+
+function isOddNumber(num) {
+  return num % 2 !== 0;
+}
 </script>
