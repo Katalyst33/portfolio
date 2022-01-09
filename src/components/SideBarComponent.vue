@@ -1,5 +1,7 @@
 <template>
-  <div class="flex h-screen justify-center items-center regular-text">
+  <div
+    class="flex h-screen justify-center items-center regular-text border-r border-r-slate-200"
+  >
     <div>
       <AppLogo />
       <div class="flex flex-col space-y-3 pt-10 -ml-4">

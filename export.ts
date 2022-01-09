@@ -155,6 +155,7 @@ export const samples = [
     link: "https://www.codementor.io/learn-programming/12-important-things-to-include-in-web-dev-portfolios",
     title: "Things to add",
   },
+  { link: "https://brittanychiang.com/", title: "brittanychiang-green" },
   { link: "", title: "" },
   // { link: "", title: "" },
 ];
@@ -174,19 +175,20 @@ export const menuItems = [
     icon: "fad fa-info-circle",
   },
   {
-    title: "resume",
-    name: "Resume",
-
-    link: "/resume",
-    icon: "fad fa-address-card",
-  },
-  {
     title: "Experience",
     link: "/experience",
     name: "Experience",
 
     icon: "fad fa-address-card",
   },
+  {
+    title: "work",
+    name: "Work",
+
+    link: "/work",
+    icon: "fad fa-address-card",
+  },
+
   {
     title: "Skills",
     name: "Skill",

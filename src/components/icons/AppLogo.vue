@@ -73,7 +73,7 @@ export default {
   }
 
   100% {
-    fill: #0af09c;
+    fill: #64ffda;
   }
 }
 
@@ -100,7 +100,7 @@ export default {
   }
 
   100% {
-    fill: #0af09c;
+    fill: #64ffda;
   }
 }
 

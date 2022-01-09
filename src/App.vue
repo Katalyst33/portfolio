@@ -28,7 +28,7 @@ if (
             <SideBarComponent />
           </div>
           <div
-            class="bg-[#f8f8f8] dark:bg-gray-800 h-screen col-span-3 overflow-y-scroll"
+            class="bg-[#f8f8f8] dark:bg-slate-900 h-screen col-span-3 overflow-y-scroll"
           >
             <router-view v-slot="{ Component, route }" class="md:p-20 px-4">
               <transition name="route" mode="out-in">
@@ -49,7 +49,6 @@ if (
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   /*cursor: url("@/icons/sharing.png"), auto;*/
   /*cursor: none;*/

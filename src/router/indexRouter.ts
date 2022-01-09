@@ -3,7 +3,7 @@ import HomeView from "../views/HomeView.vue";
 const About = () => import("../views/DemoView.vue");
 const Experience = () => import("../views/ExperiencePage.vue");
 const Skills = () => import("../views/DemoView.vue");
-const Resume = () => import("../views/DemoView.vue");
+const Projects = () => import("../views/ProjectPage.vue");
 const Tools = () => import("../views/DemoView.vue");
 const Contact = () => import("../views/ContactPage.vue");
 
@@ -30,9 +30,9 @@ const router = createRouter({
     },
 
     {
-      path: "/resume",
-      name: "Resume",
-      component: Resume,
+      path: "/work",
+      name: "Work",
+      component: Projects,
     },
     {
       path: "/skills",

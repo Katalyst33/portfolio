@@ -1,8 +1,14 @@
 @use "base";
 .title{
   @include base.text-default;
-  @apply text-3xl
+  @apply text-3xl pb-10
 }
+
+.big-title{
+  @include base.text-default;
+  @apply text-5xl font-bold
+}
+
 
 .menu-text{
   @include base.text-default;
@@ -14,3 +20,9 @@
   @include base.text-default;
   //@apply text-base
 }
+.tab {
+  @apply  rounded-sm p-4 text-left shadow;
+}
+
+//dark:bg-slate-800 bg-gray-100
+
