@@ -2,15 +2,29 @@
   <div>
     <h1 class="title">Project page</h1>
     <div class="tab" v-for="(item, index) in projects" :key="index">
-      <div class="flex flex-col xl:flex-row">
-        <h1 class="font-bold regular-text text-2xl">{{ item.name }}</h1>
-        <a target="_blank" :href="item.link">
-          <img
-            class="bg-green-500"
+      <h1 class="font-bold regular-text text-2xl">{{ item.name }}</h1>
+
+      <div class="grid grid-cols-2">
+        <div class="row-start-1">
+          <a
             style="width: 500px; height: 300px"
-            src="https://picsum.photos/500/?random"
-          />
-        </a>
+            target="_blank"
+            class="rounded-md"
+            :href="item.link"
+          >
+            <div class="relative rounded-full order-1">
+              <img
+                class="rounded-md"
+                style="width: 500px; height: 300px"
+                src="https://picsum.photos/1000/"
+              />
+              <div
+                class="bg-green-400 rounded-md opacity-75 hover:opacity-0 absolute top-0 bottom-0 left-0 transition duration-500 ease-in-out"
+                style="width: 500px; height: 300px"
+              ></div>
+            </div>
+          </a>
+        </div>
         <div class="regular-text space-y-4">
           <div class="dark:bg-slate-800 p-4">
             <div>
