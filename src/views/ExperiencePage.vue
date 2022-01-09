@@ -23,12 +23,12 @@
                   </h1>
                   <h1 class="text-green-400 font-medium">{{ item.company }}</h1>
                   <div>
-                    <ul
-                      class="px-4"
-                      v-for="(item, index) in item.description"
-                      :key="index"
-                    >
-                      <li class="list-disc">
+                    <ul>
+                      <li
+                        v-for="(item, index) in item.description"
+                        :key="index"
+                        class="list-disc"
+                      >
                         {{ item }}
                       </li>
                     </ul>
@@ -44,7 +44,9 @@
 </template>
 
 <script lang="ts" setup>
-const experiences = [
+import { ref } from "vue";
+
+const experiences = ref([
   {
     company: "Katalyst technologies",
     role: "Lead Developer",
@@ -81,7 +83,7 @@ const experiences = [
       "22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
     ],
   },
-];
+]);
 </script>
 
 <style lang="scss"></style>
