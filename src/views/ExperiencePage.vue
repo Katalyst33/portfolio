@@ -49,16 +49,17 @@ import { ref } from "vue";
 const experiences = ref([
   {
     company: "Katalyst technologies",
-    role: "Lead Developer",
+    role: "Lead Front End Developer",
     description: [
+      "Delivered several WordPress websites and web application for small to medium-sized businesses.",
+      "Developed projects plans and coordinated work with mobile devel- opers and web programmers. Redesigned websites and application",
       "11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
-      "11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
-      "11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
+      "developed and maintained a website for a small business. Developed and maintained a website for a small business.",
     ],
   },
   {
     company: "Disenvi",
-    role: "Lead designer",
+    role: "Ui / Ux Designer",
     description: [
       "22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
       "22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
@@ -66,8 +67,8 @@ const experiences = ref([
     ],
   },
   {
-    company: "Katalyst technologies",
-    role: "Lead Developer",
+    company: "Wildstream Music",
+    role: "Front End Developer",
     description: [
       "11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
       "11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",

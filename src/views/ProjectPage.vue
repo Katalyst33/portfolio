@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div class="header"></div>
     <h1 class="title">Project page</h1>
     <div class="tab py-10" v-for="(item, index) in projects" :key="index">
       <div class="grid grid-cols-2 gap-x-10 gap-y-10">
@@ -28,24 +29,27 @@
             class="font-bold regular-text text-2xl"
             :class="isOddNumber(index) ? '' : 'text-right'"
           >
-            {{ item.name }} {{ isOddNumber(index) ? "💎odd" : "even" }}
-            {{ index }}
+            {{ item.name }}
           </h1>
 
           <div :class="isOddNumber(index) ? 'text-left' : 'text-right'">
-            <div class="dark:bg-slate-800 p-4">
+            <div class="bg-gray-100 dark:bg-slate-800 p-4">
               <div>
                 <p class="">{{ item.description }}</p>
               </div>
             </div>
             <div class="flex" :class="isOddNumber(index) ? '' : 'justify-end'">
               <div>
-                <h3 class="mt-4">Roles</h3>
+                <h3 class="mt-4">Responsibility</h3>
                 <ul
                   class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-2 text-slate-200 font-medium pb-4 text-right"
                 >
-                  <li v-for="(item, index) in item.roles" :key="index" class="">
-                    {{ item }},
+                  <li
+                    v-for="(roles, index) in item.roles"
+                    :key="index"
+                    class=""
+                  >
+                    {{ roles }}
                   </li>
                 </ul>
                 <a
@@ -75,7 +79,7 @@ const projects = ref([
     img: "https://picsum.photos/500/?random",
     description: `H2O is a doorstep water delivery service, that features a payment system, and a delivery system.
      it is built with an administrator for to manage products and process orders`,
-    roles: ["Design Lead", "Ui / Ux Designer", "Frontend Developer"],
+    roles: ["Ideation,", "Design,", "Ui / Ux, ", "Frontend"],
   },
   {
     name: "Grand Eagle Travels",
@@ -86,13 +90,7 @@ const projects = ref([
  it features a  administrator dashboard for managing travel destinations, processing personal
  information and user.  it also features  a user dashboard for users to provide information and manage destination.`,
 
-    roles: [
-      "Design Lead",
-      "Ui / Ux Designer",
-      "Frontend Developer",
-      "Technical lead",
-      "Backend Developer",
-    ],
+    roles: ["Ideation,", "Ui / Ux, ", "Frontend,", "Backend "],
   },
   {
     name: "Wildstream Music",
@@ -100,7 +98,7 @@ const projects = ref([
     img: "https://picsum.photos/500/?random",
     description: `Wildstream music is one of the largest Nigeria based music streaming service for local and international artists.
      nicked named the soundcloud of Nigeria. it boast a  daily uploads of over 1000 songs.`,
-    roles: ["Design Lead", "Ui / Ux Designer"],
+    roles: ["Design,", "Ui / Ux,"],
   },
   {
     name: "Katalyst Technologies",
@@ -115,3 +113,14 @@ function isOddNumber(num) {
   return num % 2 !== 0;
 }
 </script>
+
+<style>
+.header {
+  height: 400px;
+  width: 400px;
+  color: white;
+
+  background: linear-gradient(to top, #3204fdba, #9907facc),
+    url(https://picsum.photos/1280/853/?random=1) no-repeat top center;
+}
+</style>
