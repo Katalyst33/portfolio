@@ -196,18 +196,4 @@ export const menuItems = [
     link: "/skills",
     icon: "fad fa-sign-in-alt",
   },
-  {
-    title: "Tools",
-    link: "/tools",
-    name: "Tools",
-
-    icon: "fad fa-user-plus",
-  },
-  {
-    title: "Contact",
-    link: "/contact",
-    name: "Contact",
-
-    icon: "fad fa-user-plus",
-  },
 ];

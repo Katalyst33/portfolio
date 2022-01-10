@@ -12,7 +12,7 @@
           </div>
           <div class="space-y-4">
             <div class="">
-              <div class="space-y-8">
+              <div class="">
                 <div
                   class="tab"
                   v-for="(item, index) in experiences"
@@ -21,15 +21,20 @@
                   <h1 class="text-xl font-medium">
                     {{ item.role }}
                   </h1>
-                  <h1 class="text-green-400 font-medium">{{ item.company }}</h1>
-                  <div>
-                    <ul>
+                  <h1 class="text-green-400 font-medium">
+                    {{ item.company }}
+                  </h1>
+                  <div class="pt-2">
+                    <ul class="space-y-2">
                       <li
                         v-for="(item, index) in item.description"
                         :key="index"
-                        class="list-disc"
+                        class=""
                       >
-                        {{ item }}
+                        <div class="flex gap-x-2">
+                          <i class="fal fa-caret-right"></i>
+                          <p>{{ item }}</p>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -51,37 +56,30 @@ const experiences = ref([
     company: "Katalyst technologies",
     role: "Lead Front End Developer",
     description: [
+      "Manage website development projects from initial design through completion, optimizing all cross-browser and multi-platform compatibility.",
+      "Work closely with programmers and clients to meet project requirements, goals, and desired functionality.",
       "Delivered several WordPress websites and web application for small to medium-sized businesses.",
-      "Developed projects plans and coordinated work with mobile devel- opers and web programmers. Redesigned websites and application",
-      "11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
-      "developed and maintained a website for a small business. Developed and maintained a website for a small business.",
+      "Developed websites from front to backend using Vue js, Node js, and Mongodb.",
+      "Conduct training for clients on handling website content management systems.",
     ],
   },
-  {
-    company: "Disenvi",
-    role: "Ui / Ux Designer",
-    description: [
-      "22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
-      "22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
-      "22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
-    ],
-  },
+
   {
     company: "Wildstream Music",
-    role: "Front End Developer",
+    role: "Product Designer",
     description: [
-      "11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
-      "11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
-      "11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
+      "Performed ideation, sketching and wireframing.",
+      "Assessed UX and UI design for technical feasibility and usability",
     ],
   },
   {
     company: "Disenvi",
     role: "Lead designer",
     description: [
-      "22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
-      "22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
-      "22Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae labore minus, molestias necessitatibus nobis",
+      "Implemented websites, mobile application, and landing pages from concept to development",
+      "Standardized all output with a new, responsive, mobile-first approach and strategy",
+      "Assessed UX and UI design for technical feasibility and usability",
+      "collaborated with product team members to implement new featues development",
     ],
   },
 ]);

@@ -2,7 +2,6 @@
   <div class="flex h-screen justify-center items-center">
     <div class="">
       <main class="flex flex-col lg:flex-row items-center">
-        <ProfileImage />
         <div>
           <p class="dark:text-green-400 text-xl">Hi, my name is</p>
           <h1 class="big-title">
@@ -25,18 +24,3 @@
     </div>
   </div>
 </template>
-<script>
-import ProfileImage from "@/components/ProfileImage.vue";
-export default {
-  components: { ProfileImage },
-};
-</script>
-
-<style scoped>
-.clip-circle {
-  clip-path: circle(42% at 50% 50%);
-  shape-outside: circle(42% at 50% 50%);
-  /* OLD VALUE example: circle(245px, 140px, 50px); */
-  /* Yep, even the new clip-path has deprecated stuff. */
-}
-</style>

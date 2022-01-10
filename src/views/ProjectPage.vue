@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="header"></div>
+    <div class="project-img"></div>
     <h1 class="title">Project page</h1>
     <div class="tab py-10" v-for="(item, index) in projects" :key="index">
       <div class="grid grid-cols-2 gap-x-10 gap-y-10">
@@ -115,12 +115,16 @@ function isOddNumber(num) {
 </script>
 
 <style>
-.header {
+.project-img {
   height: 400px;
   width: 400px;
   color: white;
 
-  background: linear-gradient(to top, #3204fdba, #9907facc),
+  background: linear-gradient(to top, #1d45508e, #1d45508e),
     url(https://picsum.photos/1280/853/?random=1) no-repeat top center;
+}
+.project-img:hover {
+  background: linear-gradient(transparent, #24d528),
+    url(https://picsum.photos/1280/853/?random=2) no-repeat top center;
 }
 </style>

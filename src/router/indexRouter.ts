@@ -1,11 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-const About = () => import("../views/DemoView.vue");
+const About = () => import("../views/AboutPage.vue");
 const Experience = () => import("../views/ExperiencePage.vue");
-const Skills = () => import("../views/DemoView.vue");
+const Skills = () => import("../views/SkillsPage.vue");
 const Projects = () => import("../views/ProjectPage.vue");
-const Tools = () => import("../views/DemoView.vue");
-const Contact = () => import("../views/ContactPage.vue");
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,16 +36,6 @@ const router = createRouter({
       path: "/skills",
       name: "Skill",
       component: Skills,
-    },
-    {
-      path: "/tools",
-      name: "Tools",
-      component: Tools,
-    },
-    {
-      path: "/contact",
-      name: "Contact",
-      component: Contact,
     },
   ],
 
