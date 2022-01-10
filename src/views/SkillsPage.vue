@@ -52,7 +52,7 @@ const languages = [
 const frameworksTechnologies = [
   { title: "Vue", image: "" },
   { title: "React", image: "" },
-  { title: "Xpresser", image: "" },
+  { title: "Xpresser Ts", image: "" },
   { title: "Express", image: "" },
   { title: "WordPress", image: "" },
   { title: "Vite", image: "" },
