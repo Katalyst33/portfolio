@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.4.2",
+    "@heroicons/vue": "^1.0.5",
     "@vueuse/core": "^7.5.3",
+    "canvas-sketch": "^0.7.4",
+    "canvas-sketch-cli": "^1.11.14",
     "pinia": "^2.0.9",
     "vue": "^3.2.26",
     "vue-router": "^4.0.12"

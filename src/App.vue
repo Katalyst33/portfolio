@@ -2,6 +2,7 @@
 import HeaderComponent from "@/HeaderComponent.vue";
 import SideBarComponent from "@/components/SideBarComponent.vue";
 import FooterLayout from "@/layout/FooterLayout.vue";
+import MobileSideBar from "@/views/MobileSideBar.vue";
 
 // import MouseComponent from "@/MouseComponent.vue";
 
@@ -21,7 +22,7 @@ if (
   <div class="h-screen overflow-y-hidden w-screen">
     <!--    <div class="page-load">Load page</div>-->
     <HeaderComponent />
-
+    <MobileSideBar />
     <div class="">
       <div class>
         <div class="grid xl:grid-cols-4">

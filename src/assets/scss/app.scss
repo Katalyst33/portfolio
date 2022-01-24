@@ -24,5 +24,10 @@
   @apply  rounded-sm p-4 text-left   border-b-2 dark:border-b-slate-800;
 }
 
+.default-background{
+  @include base.fill-default;
+
+}
+
 //dark:bg-slate-800 bg-gray-100
 

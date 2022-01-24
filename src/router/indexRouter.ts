@@ -3,7 +3,7 @@ import HomeView from "../views/HomeView.vue";
 const About = () => import("../views/AboutPage.vue");
 const Experience = () => import("../views/ExperiencePage.vue");
 const Skills = () => import("../views/SkillsPage.vue");
-const CanvasSketch = () => import("../views/CanvasSketch.vue");
+// const CanvasSketch = () => import("../views/CanvasSketch.vue");
 const Projects = () => import("../views/ProjectPage.vue");
 
 const router = createRouter({
@@ -38,11 +38,11 @@ const router = createRouter({
       name: "Skill",
       component: Skills,
     },
-    {
+    /*    {
       path: "/canvas-sketch",
       name: "CanvasSketch",
       component: CanvasSketch,
-    },
+    },*/
   ],
 
   scrollBehavior() {

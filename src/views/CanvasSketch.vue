@@ -1,8 +1,8 @@
 <template>
   <div>
     <div>
-      <SketchFundamentals v-if="false" />
-      <SkecthDrawing />
+      <SketchFundamentals />
+      <!--      <SkecthDrawing />-->
     </div>
   </div>
 </template>
