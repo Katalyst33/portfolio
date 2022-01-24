@@ -19,6 +19,7 @@ if (
 <template>
   <!--  <MouseComponent />-->
   <div class="h-screen overflow-y-hidden w-screen">
+    <!--    <div class="page-load">Load page</div>-->
     <HeaderComponent />
 
     <div class="">
@@ -35,7 +36,7 @@ if (
                 <component :is="Component" :key="route.path" />
               </transition>
             </router-view>
-            <FooterLayout />
+            <FooterLayout v-if="false" class="" />
           </div>
         </div>
       </div>
@@ -68,5 +69,24 @@ if (
 
 .route-leave-active {
   transition: all 0.3s ease-in;
+}
+
+.page-load {
+  @apply h-screen;
+  animation-name: page-load;
+  animation-duration: 2s;
+
+  //opacity: 0%;
+}
+
+@keyframes page-load {
+  from {
+    opacity: 100%;
+    background-color: red;
+  }
+  to {
+    //visibility: hidden;
+    display: none;
+  }
 }
 </style>

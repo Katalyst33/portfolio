@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="grid xl:grid-cols-3 regular-text px-10">
+    <div class="grid xl:grid-cols-3 regular-text lg:px-10 py-20">
       <div>
         <h1 class="title">Experience</h1>
       </div>
-      <div class="col-span-2 p-2">
-        <div class="flex">
-          <div class="space-y-2">
+      <div class="col-span-2 lg:p-2">
+        <div class="lg:flex">
+          <div class="hidden lg:inline space-y-2">
             <div class="h-[400px] border-l border-l-green-300 px-4"></div>
             <div class="h-[100px] border-l border-l-green-300 px-4"></div>
           </div>

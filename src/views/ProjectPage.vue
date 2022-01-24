@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h1 class="title">Project page</h1>
+  <div class="py-20">
+    <h1 class="title">Work i have done</h1>
     <div class="tab py-10" v-for="(item, index) in projects" :key="index">
-      <div class="grid lg:grid-cols-2 gap-x-10 gap-y-10">
+      <div class="lg:flex justify-between gap-x-10 gap-y-10">
         <div :class="isOddNumber(index) ? 'lg:order-1' : ''">
           <a
             style="width: 500px; height: 300px"
