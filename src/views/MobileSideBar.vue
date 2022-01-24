@@ -55,7 +55,7 @@
               </div>
               <div class="flex flex-col space-y-10 pt-10">
                 <ul v-for="(item, index) in menuItems" :key="index">
-                  <li class="flex items-center">
+                  <li @click="toggleSideBar" class="flex items-center">
                     <router-link
                       class="pl-4 text-left capitalize menu-text"
                       :to="{ name: item.name }"
@@ -68,9 +68,6 @@
             </div>
           </div>
         </TransitionChild>
-        <div class="flex-shrink-0 w-14" aria-hidden="true">
-          <!-- Dummy element to force sidebar to shrink to fit close icon -->
-        </div>
       </Dialog>
     </TransitionRoot>
 
