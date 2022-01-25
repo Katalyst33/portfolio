@@ -19,16 +19,55 @@
           and digital experiences at as a free lancer.
         </p>
         <br />
-
+        <ul class="flex gap-x-10">
+          <li v-for="(item, index) in contacts" :key="index">
+            <a :href="item.link"
+              ><i :class="item.image"></i
+              ><span class="underline pl-2"> {{ item.social }}</span></a
+            >
+          </li>
+        </ul>
         <br />
+        <div>
+          <ButtonComponent
+            @click="downloadResume"
+            title="Download Resume"
+            icon="fal fa-cloud-download"
+          />
+        </div>
       </div>
       <ProfileImage />
     </main>
   </div>
 </template>
-<script>
+<script setup lang="ts">
 import ProfileImage from "../components/ProfileImage.vue";
-export default {
-  components: { ProfileImage },
-};
+import ButtonComponent from "@/views/ButtonComponent.vue";
+
+const contacts = [
+  {
+    social: "LinkedIn",
+    link: "https://www.linkedin.com/in/chibueze-samuel-nmeje-088508a2/",
+    image: "fab fa-linkedin",
+  },
+
+  /*  {
+    social: "Twitter",
+    link: "",
+    image: "fab fa-twitter",
+  },*/
+  {
+    social: "Samuelnmeje@gmail.com",
+    link: "mailto:samuelnmeje@gmail.com?Subject=Enquiry",
+    image: "fal fa-envelope",
+  },
+];
+
+function downloadResume() {
+  const link = document.createElement("a");
+  link.href = "src/downloads/front-end-developer-vue.pdf";
+  link.download = "front-end-developer-vue.pdf";
+
+  link.click();
+}
 </script>

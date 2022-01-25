@@ -10,21 +10,21 @@
           ></i>
         </button>
         <ul
-          class="hidden lg:inline"
+          class="hidden lg:inline xl:hidden"
           v-for="(item, index) in menuItems"
           :key="index"
         >
           <li class="flex items-center space-x-1">
             <router-link class="px-2 menu-text" :to="item.link">
               <i :class="item.icon"></i>
-              <span class="capitalize pl-2 hidden xl:inline">{{
+              <span class="capitalize pl-2 hidden lg:inline">{{
                 item.title
               }}</span></router-link
             >
           </li>
         </ul>
 
-        <div class="lg:hidden">
+        <div class="lg:hidden mx-4">
           <button
             type="button"
             class="px-1 text-white border-l focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
