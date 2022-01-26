@@ -5,6 +5,7 @@ const Experience = () => import("../views/ExperiencePage.vue");
 const Skills = () => import("../views/SkillsPage.vue");
 // const CanvasSketch = () => import("../views/CanvasSketch.vue");
 const Projects = () => import("../views/ProjectPage.vue");
+const NotFound = () => import("../views/NotFound.vue");
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -43,6 +44,11 @@ const router = createRouter({
       name: "CanvasSketch",
       component: CanvasSketch,
     },*/
+    {
+      name: "NotFound",
+      path: "/:pathMatch(.*)*",
+      component: NotFound,
+    },
   ],
 
   scrollBehavior() {
