@@ -21,7 +21,7 @@
                   <h1 class="text-xl font-medium">
                     {{ item.role }}
                   </h1>
-                  <h1 class="text-green-400 font-medium">
+                  <h1 class="text-green-600 dark:text-green-400 font-medium">
                     {{ item.company }}
                   </h1>
                   <div class="pt-2">
@@ -53,7 +53,7 @@ import { ref } from "vue";
 
 const experiences = ref([
   {
-    company: "Katalyst technologies",
+    company: "Katalyst Technologies",
     role: "Lead Front End Developer",
     description: [
       "Manage website development projects from initial design through completion, optimizing all cross-browser and multi-platform compatibility.",

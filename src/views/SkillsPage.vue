@@ -21,7 +21,7 @@
                   'w-full py-2.5  leading-5 font-medium dark:text-white text-xl font-bold rounded-lg',
                   'focus:outline-none ring-offset-2 ring-offset-blue-400 ring-slate-800 dark:ring-green-300 ring-opacity-60',
                   selected
-                    ? 'dark:text-green-300 border border-slate-500 dark:border-green-400 font-bold shadow'
+                    ? 'dark:text-green-300 border border-green-600 dark:border-green-400 font-bold shadow'
                     : 'text-blue-100 hover:bg-white/[0.12] dark:hover:text-white-300 hover:text-gray-700',
                 ]"
               >
