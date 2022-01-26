@@ -102,7 +102,6 @@
     </div>
     <!--mobile view-->
 
-
     <div
       class="tab py-10 lg:hidden px-4"
       v-for="(item, index) in projects"
@@ -195,9 +194,17 @@ import { computed, ref } from "vue";
 
 const projects = ref([
   {
+    name: "My Portfolio Website",
+    link: "https://chibuezenmeje.me",
+    img: "portfolio.jpg",
+    github: "https://github.com/Katalyst33/portfolio.git",
+    description: `My Portfolio website that  displays my work and my skills. it features a light and dark mode, for users with accessibility challenges`,
+    roles: ["Ideation,", "Design,", "Ui / Ux, ", "Frontend"],
+  },
+  {
     name: "H2O Doorstep Water Delivery",
     link: "https://h2o.ng",
-    img: "h2o.png",
+    img: "h2o.jpg",
     description: `H2O is a doorstep water delivery service, that features a payment system, and a delivery system.
      it is built with an administrator for to manage products and process orders`,
     roles: ["Ideation,", "Design,", "Ui / Ux, ", "Frontend"],
@@ -206,7 +213,7 @@ const projects = ref([
     name: "Grand Eagle Travels",
     link: "https://getravelandtours.com/",
     github: "https://github.com/Katalyst33/grand-front",
-    img: "grand-eagle.png",
+    img: "grand-eagle.jpg",
 
     description: `Grand Eagle Travels is a travel agency web application for users to book and process there travel destinations with the agency
  it features a  administrator dashboard for managing travel destinations, processing personal
@@ -217,7 +224,7 @@ const projects = ref([
   {
     name: "Wildstream Music",
     link: "https://www.wildstream.ng/",
-    img: "wildstream.png",
+    img: "wildstream.jpg",
     description: `Wildstream music is one of the largest Nigeria based music streaming service for local and international artists.
      nicked named the soundcloud of Nigeria. it boast a  daily uploads of over 1000 songs.`,
     roles: ["Design,", "Ui / Ux,"],
@@ -225,7 +232,7 @@ const projects = ref([
   {
     name: "Katalyst Technologies",
     link: "https://katalyst.tech/",
-    img: "katalyst.png",
+    img: "katalyst.jpg",
     description: `Katalyst Technologies is a company website built with wordpress, it features a admin dashboard for managing content and updating content about the company oin the website.`,
     roles: ["Web developer"],
   },

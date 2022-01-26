@@ -15,11 +15,14 @@
               I build things for the web.
             </h1>
             <p class="text-justify py-4 lg:w-[600px] regular-text">
-              i am a Front end developer based in Glasgow Scotland. Previously
-              at working at Katalyst Technologies as Design Lead. I specialise
-              in using Vue, React, and other current web development
-              technologies and practises to create engaging experiences and
-              functional interfaces.
+              I am a front-end developer in Glasgow, Scotland. I used to work
+              with Katalyst Technologies in Nigeria as their lead designer.
+              Utilizing Vue, React, and other current web development tools and
+              practises, I specialise in developing engaging experiences and
+              functional interfaces. I am interested in learning and working
+              with new web development technologies that may be used to create
+              well-functioning and user-friendly websites and online
+              applications.
             </p>
           </div>
         </main>

@@ -6,7 +6,7 @@
     </div>
     <div>
       <div class="w-full px-2 py-16 sm:px-0">
-        <TabGroup>
+        <TabGroup manual>
           <TabList
             class="grid grid-cols-2 lg:grid-cols-4 gap-y-4 p-1 space-x-1 bg-blue-900/20 rounded-xl"
           >
@@ -30,7 +30,9 @@
             </Tab>
           </TabList>
 
-          <TabPanels class="mt-2 regular-text">
+          <TabPanels
+            class="mt-2 regular-text border border-green-600 dark:border-green-400 rounded-md"
+          >
             <TabPanel
               v-for="(posts, idx) in Object.values(categories)"
               :key="idx"
@@ -104,7 +106,7 @@ let categories = ref({
   ],
 });
 
-const languages = [
+/*const languages = [
   { title: "JavaScript[ES6]", image: "" },
   { title: "TypeScript", image: "" },
   { title: "Bash Script", image: "" },
@@ -146,5 +148,5 @@ const tools = [
   { title: "Insomnia", image: "" },
   { title: "Microsoft word", image: "" },
   { title: "Microsoft Power point", image: "" },
-];
+];*/
 </script>
