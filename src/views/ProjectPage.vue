@@ -102,6 +102,7 @@
     </div>
     <!--mobile view-->
 
+
     <div
       class="tab py-10 lg:hidden px-4"
       v-for="(item, index) in projects"
